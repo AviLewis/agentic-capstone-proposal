@@ -1,8 +1,7 @@
 # Capstone Demo Day — your project proposal
 
-Submit a one-folder overview of your product for Demo Day. **Judging is evidence-based** and runs in
-Claude Code against a fixed rubric — this repo gives you the template and tells you exactly how you're
-scored, so there are no surprises.
+Submit a one-folder overview of your product for Demo Day. **Judging is evidence-based** — this repo
+gives you the template and the dimensions you'll be scored on, so there are no surprises.
 
 ## How to submit
 1. Copy [`CAPSTONE-PROPOSAL-TEMPLATE.md`](CAPSTONE-PROPOSAL-TEMPLATE.md) into a folder:

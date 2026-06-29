@@ -63,9 +63,11 @@ moment? Link a screenshot or demo clip for each flow — that's what turns this 
 - **Memory / state / reflection (if any):** <What does it remember, learn, or self-correct on? Evidence?>
 
 ## 4. Architecture  *(Engineering excellence — code quality & robustness)*
-<Main components and how they connect: agents/skills, models, tools/MCP, data, storage, external APIs.
-Then the part judges actually score here: **code quality and robustness** — error handling, tests,
-observability/telemetry, how it behaves when something fails. Link the code that shows it.>
+<Cover, briefly — and link the code/artifact that shows each:>
+- **Components & data flow:** <agents/skills, models, tools/MCP, data, storage, external APIs — how they connect.>
+- **Robustness:** <error handling, retries, how it behaves when something fails; observability/telemetry.>
+- **Tests:** <what's covered, and link the suite + a passing run. A runnable/passing test is your
+  single strongest piece of evidence — it's what moves a claim into the top "demonstrated" tier.>
 
 ## 5. Safety & control  *(Safety & control — and there's a downside, see note)*
 <How is it safe and trustworthy? Human-in-the-loop on real actions, guardrails / deny rules, spend &
