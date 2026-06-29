@@ -1,0 +1,9 @@
+# Real student submissions live here at judging time — never commit them.
+submissions/*
+!submissions/README.md
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
