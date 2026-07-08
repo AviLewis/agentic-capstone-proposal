@@ -1,0 +1,141 @@
+
+> coach-platform-api@0.1.0 test
+> jest
+
+PASS src/agents/orchestrator/__tests__/tag-routing.table.spec.ts
+PASS src/personalization/infrastructure/__tests__/preference-event.persistence-mapper.spec.ts
+PASS src/agents/assistant/__tests__/flush-conversation-preferences.handler.spec.ts
+PASS src/agents/assistant/__tests__/preference-distillation.service.spec.ts
+PASS src/agents/approval/__tests__/approval.service.spec.ts
+[32m[Nest] 1991  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[FlushConversationPreferencesHandler] [39m[32mFlushed 1 candidate(s) → 1 chat event(s) for conversation c1.[39m
+[32m[Nest] 1983  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalService] [39m[32mApproved week 2 for u1: committed 1, calendar synced 1/1.[39m
+[32m[Nest] 1983  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalService] [39m[32mApproved week 2 for u1: committed 1, calendar synced 1/1.[39m
+PASS src/agents/conversation/infrastructure/__tests__/conversation.repository.spec.ts
+PASS src/agents/triggers/__tests__/garmin-sync-batch.listener.spec.ts
+[31m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [31m  ERROR[39m [38;5;3m[OnboardingGenerationListener] [39m[31mAuto-generation after onboarding failed for user-1: Error: coach down[39m
+PASS src/agents/triggers/__tests__/onboarding-generation.listener.spec.ts
+[31m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [31m  ERROR[39m [38;5;3m[BuildConversationOrchestrator] [39m[31mrunDraftSession failed for u1: Error: OPENAI_NOT_CONFIGURED[39m
+PASS src/agents/build/__tests__/build-conversation.orchestrator.spec.ts
+[31m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [31m  ERROR[39m [38;5;3m[ApprovalTtlService] [39m[31mTTL sweep failed for batch bad: boom[39m
+PASS src/agents/approval/__tests__/approval-ttl.service.spec.ts
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild turn: conversation=c1 phase=DRAFT_SESSION[39m
+[32m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[OnboardingGenerationListener] [39m[32mUser user-1 already has a built program; skipping auto-generation.[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild turn: conversation=c1 phase=AWAIT_SESSION_CONSENT[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild advance: conversation=c1 phase=DRAFT_SESSION[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild advance: conversation=c1 phase=PROPOSE_SLOTS[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild turn: conversation=c1 phase=AWAIT_TARGETS_CONSENT[39m
+[32m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[OnboardingGenerationListener] [39m[32mOnboarding for user-1 → program_build conversation convo-1 (program new-prog).[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mtargets-locked advance: conversation=c1 phase=DRAFT_SESSION[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild turn: conversation=c1 phase=PROPOSE_SLOTS[39m
+[32m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[OnboardingGenerationListener] [39m[32mUser user-1 has an un-built program seed-prog; resuming generation.[39m
+[32m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[OnboardingGenerationListener] [39m[32mOnboarding for user-1 → program_build conversation convo-1 (program seed-prog).[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mconfirmSlot advance: conversation=c1 phase=COMPLETE[39m
+[32m[Nest] 1988  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[OnboardingGenerationListener] [39m[32mOnboarding for user-1 → program_build conversation convo-1 (program new-prog).[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild resume: conversation=c1 phase=PROPOSE_SLOTS[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild resume: conversation=c1 phase=AWAIT_SESSION_CONSENT[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mbuild turn: conversation=c1 phase=DRAFT_SESSION[39m
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[BuildConversationOrchestrator] [39m[32mconfirmSlot: stale slot for session id-run-1 (busy clash at 07:00); re-proposing[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL sweep over 1 pending batch(es).[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL auto-commit: session-day draft week 3 for u1 reached session start.[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL sweep over 1 pending batch(es).[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL expire: user-initiated draft week 3 for u1 lapsed — keeping committed plan.[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL sweep over 1 pending batch(es).[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL sweep over 2 pending batch(es).[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL auto-commit: session-day draft week 3 for u1 reached session start.[39m
+[32m[Nest] 1984  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[ApprovalTtlService] [39m[32mTTL auto-commit: session-day draft week 3 for u1 reached session start.[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[GarminSyncScheduler] [39m[32mGarmin sync firing for u1 at 04:00 (2026-07-08).[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[GarminSyncScheduler] [39m[32mGarmin sync firing for u1 at 22:00 (2026-07-07).[39m
+[31m[Nest] 1980  - [39m07/08/2026, 8:16:34 AM [31m  ERROR[39m [38;5;3m[GarminSyncScheduler] [39m[31mGarmin sync sweep failed for bad: Error: boom[39m
+PASS src/agents/triggers/__tests__/garmin-sync.scheduler.spec.ts
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[GarminSyncScheduler] [39m[32mGarmin sync firing for bad at 04:00 (2026-07-08).[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[GarminSyncScheduler] [39m[32mGarmin sync firing for good at 04:00 (2026-07-08).[39m
+PASS src/agents/shared/queue/__tests__/pipeline-queue.spec.ts
+[32m[Nest] 1982  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[PipelineQueue] [39m[32mRun run-1 already claimed — skipping duplicate.[39m
+PASS src/ingestion/application/__tests__/ingestion.orchestrator.spec.ts
+PASS src/agents/auto-mode/application/commands/__tests__/revert-auto-mode-run.handler.spec.ts
+PASS src/agents/shared/llm/__tests__/agentic-loop.runtime.spec.ts
+[31m[Nest] 1993  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[AutoModeOrchestratorService] [39m[31mAuto-mode run run-1 failed: boom[39m
+PASS src/agents/triggers/__tests__/trigger-context.resolver.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode-orchestrator.service.spec.ts
+PASS src/training/application/dto/__tests__/create-training-profile.bounds.spec.ts
+PASS src/agents/approval/__tests__/calendar-sync.service.spec.ts
+[32m[Nest] 1990  - [39m07/08/2026, 8:16:34 AM [32m    LOG[39m [38;5;3m[IngestionOrchestrator] [39m[32mIngestion for u1 [2026-07-02..2026-07-08]: {"userId":"u1","from":"2026-07-02","to":"2026-07-08","daysProcessed":0,"recoveryWritten":0,"performanceWritten":0,"sessionsWritten":0,"profileChangesAppended":0,"daysWithIssues":0}[39m
+[33m[Nest] 1988  - [39m07/08/2026, 8:16:35 AM [33m   WARN[39m [38;5;3m[AgenticLoop] [39m[33massistant answered in free text; forcing emit.[39m
+[33m[Nest] 1988  - [39m07/08/2026, 8:16:35 AM [33m   WARN[39m [38;5;3m[AgenticLoop] [39m[33massistant answered in free text; forcing emit.[39m
+[33m[Nest] 1988  - [39m07/08/2026, 8:16:35 AM [33m   WARN[39m [38;5;3m[AgenticLoop] [39m[33mplanner exhausted 3 iterations without a terminal tool.[39m
+[33m[Nest] 1982  - [39m07/08/2026, 8:16:35 AM [33m   WARN[39m [38;5;3m[CalendarSyncService] [39m[33mCalendar sync failed for session a: google 500[39m
+PASS src/planned-sessions/infrastructure/__tests__/planned-session.repository.spec.ts
+PASS src/personalization/infrastructure/__tests__/preference-event.repository.spec.ts
+[31m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[31mScheduled build t1 failed for u1: Error: No active program p1 for user u1 anymore.[39m
+[31m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[31mScheduled build t1 failed for u1: Error: Program p1 has no week 1 left to build.[39m
+[31m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[31mScheduled build bad failed for u1: Error: boom[39m
+PASS src/agents/build/scheduled-build/__tests__/scheduled-week-build.scheduler.spec.ts
+PASS src/personalization/infrastructure/__tests__/preference-event.schema.spec.ts
+PASS src/agents/conversation/application/commands/__tests__/delete-conversation.handler.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode.graph.spec.ts (5.062 s)
+PASS src/ingestion/garmin-sync-schedule/application/commands/__tests__/upsert-garmin-sync-schedule.handler.spec.ts
+PASS src/agents/shared/queue/__tests__/idempotency.store.spec.ts
+PASS src/agents/conversation/application/commands/__tests__/start-conversation.handler.spec.ts
+PASS src/agents/auto-mode/interface/__tests__/auto-mode.controller.spec.ts (5.081 s)
+PASS src/agents/auto-mode/application/queries/__tests__/list-auto-mode-runs.handler.spec.ts
+[31m[Nest] 1981  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[OutcomeClarifyListener] [39m[31mFailed to deliver outcome clarify for ps1: Error: db down[39m
+[31m[Nest] 1981  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[OutcomeClarifyListener] [39m[31mFailed to deliver outcome clarify for ps1: Error: db down[39m
+PASS src/agents/triggers/__tests__/outcome-clarify.listener.spec.ts
+PASS src/planned-sessions/application/commands/__tests__/commit-session.handler.spec.ts
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled-build sweep over 1 due task(s).[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled build t1 → conversation c-new (week 1) for u1.[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled-build sweep over 1 due task(s).[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled build t1: week 0 not locked yet, retrying later.[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled-build sweep over 1 due task(s).[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled-build sweep over 1 due task(s).[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled-build sweep over 2 due task(s).[39m
+[32m[Nest] 1992  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[ScheduledWeekBuildScheduler] [39m[32mScheduled build good → conversation c-new (week 1) for u1.[39m
+[32m[Nest] 1981  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[OutcomeClarifyListener] [39m[32mOutcome clarify delivered for ps1 → conversation conv-1.[39m
+[32m[Nest] 1981  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[OutcomeClarifyListener] [39m[32mOutcome clarify delivered for ps1 → conversation conv-1.[39m
+[32m[Nest] 1981  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[OutcomeClarifyListener] [39m[32mOutcome clarify delivered for ps1 → conversation conv-1.[39m
+PASS src/planned-sessions/application/commands/__tests__/upsert-session-content.handler.spec.ts
+PASS src/program/application/commands/__tests__/advance-current-week.handler.spec.ts
+PASS src/agents/conversation/application/commands/__tests__/update-title.handler.spec.ts
+PASS src/integrations/application/__tests__/integrations.status.spec.ts
+PASS src/program/application/commands/__tests__/propose-weekly-targets.handler.spec.ts
+PASS src/personalization/application/services/__tests__/distillation.service.spec.ts
+PASS src/agents/assistant/__tests__/assistant.salvage.spec.ts
+PASS src/personalization/application/services/__tests__/projection-validator.service.spec.ts
+PASS src/personalization/application/services/__tests__/promotion.service.spec.ts
+PASS src/personalization/application/services/__tests__/prompt-flattener.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode-lock.service.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode.contracts.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode-explanation.builder.spec.ts
+PASS src/program/application/commands/__tests__/revise-weekly-targets.handler.spec.ts
+PASS src/agents/approval/__tests__/pending-card-batch.service.spec.ts
+[31m[Nest] 1984  - [39m07/08/2026, 8:16:35 AM [31m  ERROR[39m [38;5;3m[AutoModeReaperService] [39m[31mAuto-mode reap sweep failed: db down[39m
+PASS src/agents/auto-mode/__tests__/auto-mode-reaper.service.spec.ts
+PASS src/agents/build/__tests__/slot-proposer.spec.ts
+PASS src/agents/shared/read-tools/__tests__/aggregates.spec.ts
+PASS src/agents/coach/__tests__/coach.guardrails.spec.ts
+PASS src/program/application/commands/__tests__/lock-weekly-targets.handler.spec.ts
+PASS src/agents/auto-mode/__tests__/auto-mode.guardrails.spec.ts
+PASS src/agents/shared/seed/__tests__/cold-start.spec.ts
+PASS src/agents/shared/seed/__tests__/preference-context.spec.ts
+PASS src/training/application/services/__tests__/profile-to-preference-items.spec.ts
+PASS src/agents/assistant/__tests__/assistant.mapping.spec.ts
+PASS src/agents/assistant/__tests__/assistant.decision.spec.ts
+PASS src/agents/triggers/__tests__/session-flush.policy.spec.ts
+PASS src/agents/build/__tests__/build-phase.resolver.spec.ts
+PASS src/agents/triggers/__tests__/outcome.policy.spec.ts
+PASS src/agents/approval/__tests__/calendar-event.builder.spec.ts
+PASS src/agents/planner/__tests__/planner.prewrite-validator.spec.ts
+PASS src/agents/approval/__tests__/approval.policy.spec.ts
+PASS src/agents/approval/__tests__/approval-card.builder.spec.ts
+PASS src/agents/approval/__tests__/approval-ttl.policy.spec.ts
+[33m[Nest] 1985  - [39m07/08/2026, 3:00:00 PM [33m   WARN[39m [38;5;3m[AutoModeLockService] [39m[33mReaping stale auto-mode run run-1 (user u1, week 2) — past 900000ms TTL.[39m
+[33m[Nest] 1985  - [39m07/08/2026, 3:00:00 PM [33m   WARN[39m [38;5;3m[AutoModeLockService] [39m[33mReaping stale auto-mode run run-2 (user u2, week 5) — past 900000ms TTL.[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[PendingCardBatchService] [39m[32mPending card batch batch-1 opened (user_initiated) for u1 week 2.[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[PendingCardBatchService] [39m[32mPending card batch batch-1 opened (user_initiated) for u1 week 2.[39m
+[32m[Nest] 1980  - [39m07/08/2026, 8:16:35 AM [32m    LOG[39m [38;5;3m[PendingCardBatchService] [39m[32mPending card batch batch-1 opened (user_initiated) for u1 week 2.[39m
+
+Test Suites: 66 passed, 66 total
+Tests:       452 passed, 452 total
+Snapshots:   0 total
+Time:        6.021 s
+Ran all test suites.
