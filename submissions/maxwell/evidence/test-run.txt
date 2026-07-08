@@ -1,0 +1,18 @@
+$ npm test    (2026-07-08T06:24Z)
+
+
+> maxwell-app@0.1.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /Users/ohaddaniel/maxwell-app
+
+ ✓ src/workflows/guardrails.test.ts (5 tests) 1ms
+ ✓ src/scheduling/differ.test.ts (5 tests) 2ms
+ ✓ src/scheduling/placer.test.ts (7 tests) 2ms
+
+ Test Files  3 passed (3)
+      Tests  17 passed (17)
+   Start at  09:24:28
+   Duration  274ms (transform 140ms, setup 0ms, collect 157ms, tests 5ms, environment 0ms, prepare 180ms)
+
