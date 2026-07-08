@@ -1,0 +1,20 @@
+{
+  "tokens": {
+    "day": "2026-07-07",
+    "cheap": 7335407,
+    "deep": 482537,
+    "embed": 393756,
+    "tts": 19024,
+    "total": 8211700,
+    "ttsCharacters": 19024
+  },
+  "stories": 581,
+  "multiSourceStories": 33,
+  "storiesUpdatedAcrossTicks": 490,
+  "signalObservations": 10539,
+  "oldestSignalAt": 1783417161567,
+  "ticksRecorded": 6,
+  "subscribers": 0,
+  "questionsAnswered": 1,
+  "generatedAt": 1783459154244
+}
