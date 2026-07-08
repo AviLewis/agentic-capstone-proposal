@@ -1,0 +1,12 @@
+$ npm run eval    (2026-07-08T06:24Z)
+
+
+> maxwell-app@0.1.0 eval
+> tsx scripts/eval.ts
+
+✓ gate                  6/6  — The model can never write the schedule of record on its own initiative.
+✓ injection             4/4  — Untrusted outer-world input is wrapped, and no injected instruction can cause a write.
+✓ scheduler            41/41  — The placer never overlaps, never breaks constraints, and never silently drops.
+✓ council-feasibility   4/4  — A council plan is not just valid JSON — every proposed intent is actually placeable.
+
+Proving Ground — OVERALL 100%  (55/55)
